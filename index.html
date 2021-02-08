@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradient</title>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gradient Hero</title>
+    </head>
+    
     <style>
+    
         body {
-            height: 100vh;
-            background-image: linear-gradient(rgba(255,255,255,0) 0%, rgba(0,0,0,1) 70%), url("images/sunset-815270_1280.jpg");
-            background-repeat: no-repeat;
+            background-color: black;
+            margin: 0;
+        }
+
+        .hero {
+            height: 40vh;
+            background: 
+                linear-gradient(white, rgba(0,0,0,0), black), 
+                url(images/sunset-815270_1280.jpg)
+            ;
+            background-position: center;
             background-size: cover;
         }
 
-        div {
-            width: 33%;
-            height: 33%;
-            color: whitesmoke;
+        article {
+            width: 50vw;
+            margin: 5% 0 0 10%;
+            color: white;
         }
+
     </style>
 
-</head>
-<body>
-    <div>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci illo excepturi asperiores doloremque dolores illum expedita distinctio non minima eius corrupti fugiat placeat architecto, consectetur quidem in minus, quaerat enim?
-        </p>
-    </div>
-    
-</body>
+    <body>
+        <div class="hero"></div>
+        <article>
+            <h1>
+                Lorem ipsum dolor sit, amet
+            </h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, 
+                inventore magni dignissimos distinctio amet repellendus 
+                necessitatibus maxime ipsam eos, enim animi expedita cum ullam. 
+                Aut repellendus veritatis libero quisquam ipsum.
+                <br><br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, 
+                inventore magni dignissimos distinctio amet repellendus 
+                necessitatibus maxime ipsam eos, enim animi expedita cum ullam. 
+                Aut repellendus veritatis libero quisquam ipsum.
+            </p>
+        </article>
+        
+    </body>
 </html>
